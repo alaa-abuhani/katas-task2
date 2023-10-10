@@ -1,0 +1,94 @@
+1- content : 1
+
+3- git diff : 
+   out put 
+   -1
+   +2
+   delete one 
+  add two
+
+ git diff tell me : it shows the differences between my working directory (the current state of my files) and the last commit in my current branch
+ (usually referred to as "HEAD").
+
+4- git diff --staged : compares the changes between the files in the staging area and the previous commit.
+   blank because not add file.txt to stage area 
+
+6- git diff tell me : not thing it is blank 
+
+7- git diff --staged tell me :
+  out put :
+   -1
+   +2
+   delete one 
+  add two
+
+9- git diff tell me :
+out put :
+-2
++3
+delet two
+add three
+
+10- git diff --staged tell me :
+out put :
+-1
++2
+  delete one 
+ add two
+
+11- Explain what is happening :
+git diff :  shows the changes that haven't been staged
+git diff --staged : shows the changes that are staged and will be included in the next commit.
+
+
+14- git status tell me now :
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+15 - Stage the change and make a commit :
+ git add file.txt
+ git commit -m " commit file.txt"
+ 
+16 -the log look like :
+display a list of commits in reverse chronological order, showing the most recent commits first. Each commit is displayed with information such as the commit hash, author, date, and commit message.
+
+Author: alaa-abuhani <alaa.abuhani@gmail.com>
+Date:   Tue Oct 10 15:41:43 2023 +0300
+
+     commit file.txt
+
+commit cfdf9d0c19781cad322407cf2f5ea66d0c5ea8c7
+Author: git-katas trainer bot <git-katas@example.com>
+Date:   Mon Oct 9 23:30:00 2023 +0300
+
+    1
+
+18 - content : 4
+
+19 - git status tell me :
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+21 - content : 3
+
+22 - git status tell me :
+On branch master
+nothing to commit, working tree clean
+
+
+
+
+
+
+
+
