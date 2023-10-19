@@ -1,11 +1,15 @@
 1- content : 1
+2- echo 2 > file.txt
 
-3- git diff : 
-   out put 
-   -1
-   +2
-   delete one 
-  add two
+3- git diff 
+diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-1
++2
+
 
  git diff tell me : it shows the differences between my working directory (the current state of my files) and the last commit in my current branch
  (usually referred to as "HEAD").
@@ -13,28 +17,41 @@
 4- git diff --staged : compares the changes between the files in the staging area and the previous commit.
    blank because not add file.txt to stage area 
 
+5-git add file.txt
+
 6- git diff tell me : not thing it is blank 
 
 7- git diff --staged tell me :
-  out put :
-   -1
-   +2
-   delete one 
-  add two
-
-9- git diff tell me :
-out put :
--2
-+3
-delet two
-add three
-
-10- git diff --staged tell me :
-out put :
+ diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
 -1
 +2
-  delete one 
- add two
+
+8- file.txt: echo 3 > file.txt
+
+
+9- git diff tell me :
+diff --git a/file.txt b/file.txt
+index 0cfbf08..00750ed 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-2
++3
+
+
+10- git diff --staged tell me :
+diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-1
++2
+
 
 11- Explain what is happening :
 git diff :  shows the changes that haven't been staged
@@ -53,7 +70,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
  git add file.txt
  git commit -m " commit file.txt"
  
-16 -the log look like :
+16 -the log look like :  git log
+
 display a list of commits in reverse chronological order, showing the most recent commits first. Each commit is displayed with information such as the commit hash, author, date, and commit message.
 
 Author: alaa-abuhani <alaa.abuhani@gmail.com>
